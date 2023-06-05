@@ -3,17 +3,17 @@ import Section from "./Section.astro";
 ---
 
 <Section
-  title="Accesorios"
-  subtitle=""
+  title="Solar y Powerwall"
+  subtitle="Energía para todos"
   color="black"
-  id="accesorios"
+  id="powerwall"
 >
   <div slot="footer" class="gap-x-6 flex mx-auto">
     <a
-      class="border-[3px] border-black bg-black text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors duration-300 hover:border-gray-800 hover:bg-gray-800"
+      class="border-[3px] border-gray-800 bg-gray-800 text-sm rounded font-medium text-white px-16 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
       href="#"
     >
-      Comprar ahora</a
+      Saber más</a
     >
     <!-- <a
       class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
@@ -25,10 +25,10 @@ import Section from "./Section.astro";
 
   <img
     slot="background"
-    alt="Accesorios"
+    alt="Solar y Powerwall"
     class="h-full w-full object-cover object-center"
-    src="accessories.avif"
-    id="bg-image-accessories"
+    src="powerwall.avif"
+    id="bg-image-powerwall"
   />
 </Section>
 
@@ -44,11 +44,11 @@ import Section from "./Section.astro";
     }
   }
 
-  var imageElement = document.querySelector("#bg-image-accessories") as HTMLImageElement;
+  var imageElement = document.querySelector("#bg-image-powerwall") as HTMLImageElement;
 
   if (isEdge()) {
-    imageElement.src = "accessories.webp";
+    imageElement.src = "powerwall.webp";
   } else {
-    imageElement.src = "accessories.avif";
+    imageElement.src = "powerwall.avif";
   }
 </script>
